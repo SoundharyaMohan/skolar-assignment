@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Country</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            align-items:center;
+            background-color: aliceblue;
+        }
+        form{
+            width: 300px;
+            margin: 0 auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input,select{
+            width:100%;
+            padding:8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="Username">Username</label><br>
+        <input type="text" id="name" name="username"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-other" name="gender" value="other">
+        <label for="gender-other">Other</label><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value=" ">--Select Country--</option>
+            <option value="usa">United States</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
